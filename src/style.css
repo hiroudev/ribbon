@@ -208,7 +208,7 @@ main {
   margin-left: 252px;
 }
 .topbar {
-  height: 70px;
+  height: 35px;
   padding: 0 42px;
   background: var(--sidebar);
   border-bottom: 1px solid var(--border);
@@ -239,7 +239,7 @@ main {
 }
 .content {
   max-width: 1580px;
-  padding: 20px 42px 0;
+  padding: 10px 42px 0;
   margin: auto;
 }
 .eyebrow {
@@ -261,7 +261,7 @@ main {
   display: flex;
   gap: 10px;
   align-items: center;
-  margin: 27px 0 15px;
+  margin: 14px 0 15px;
 }
 .searchbox {
   display: flex;
@@ -1410,7 +1410,7 @@ kbd {
 }
 @media (min-width: 1600px) {
   .content {
-    padding-top: 38px;
+    padding-top: 19px;
   }
   .board {
     gap: 26px;
@@ -1518,10 +1518,10 @@ kbd {
     margin-left: 65px;
   }
   .content {
-    padding: 20px 16px 0;
+    padding: 10px 16px 0;
   }
   .topbar {
-    height: 55px;
+    height: 28px;
     padding: 0 17px;
   }
   .topbar > span {
