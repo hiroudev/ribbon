@@ -1,0 +1,132 @@
+{
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "mac": "Command+Shift+Y",
+        "default": "Ctrl+Shift+Y"
+      },
+      "description": "Ribbon クイックアクセスを開く"
+    },
+    "slot-1": {
+      "description": "Ribbon 直接実行 1"
+    },
+    "slot-2": {
+      "description": "Ribbon 直接実行 2"
+    },
+    "slot-3": {
+      "description": "Ribbon 直接実行 3"
+    },
+    "slot-4": {
+      "description": "Ribbon 直接実行 4"
+    },
+    "slot-5": {
+      "description": "Ribbon 直接実行 5"
+    },
+    "slot-6": {
+      "description": "Ribbon 直接実行 6"
+    },
+    "slot-7": {
+      "description": "Ribbon 直接実行 7"
+    },
+    "slot-8": {
+      "description": "Ribbon 直接実行 8"
+    },
+    "slot-9": {
+      "description": "Ribbon 直接実行 9"
+    },
+    "slot-10": {
+      "description": "Ribbon 直接実行 10"
+    },
+    "slot-11": {
+      "description": "Ribbon 直接実行 11"
+    },
+    "slot-12": {
+      "description": "Ribbon 直接実行 12"
+    },
+    "slot-13": {
+      "description": "Ribbon 直接実行 13"
+    },
+    "slot-14": {
+      "description": "Ribbon 直接実行 14"
+    },
+    "slot-15": {
+      "description": "Ribbon 直接実行 15"
+    },
+    "slot-16": {
+      "description": "Ribbon 直接実行 16"
+    },
+    "slot-17": {
+      "description": "Ribbon 直接実行 17"
+    },
+    "slot-18": {
+      "description": "Ribbon 直接実行 18"
+    },
+    "slot-19": {
+      "description": "Ribbon 直接実行 19"
+    },
+    "slot-20": {
+      "description": "Ribbon 直接実行 20"
+    },
+    "slot-21": {
+      "description": "Ribbon 直接実行 21"
+    },
+    "slot-22": {
+      "description": "Ribbon 直接実行 22"
+    },
+    "slot-23": {
+      "description": "Ribbon 直接実行 23"
+    },
+    "slot-24": {
+      "description": "Ribbon 直接実行 24"
+    },
+    "slot-25": {
+      "description": "Ribbon 直接実行 25"
+    },
+    "slot-26": {
+      "description": "Ribbon 直接実行 26"
+    },
+    "slot-27": {
+      "description": "Ribbon 直接実行 27"
+    },
+    "slot-28": {
+      "description": "Ribbon 直接実行 28"
+    },
+    "slot-29": {
+      "description": "Ribbon 直接実行 29"
+    },
+    "slot-30": {
+      "description": "Ribbon 直接実行 30"
+    }
+  },
+  "name": "Ribbon — ブックマークとアクション",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png",
+    "32": "icons/icon32.png"
+  },
+  "description": "お気に入りの場所とアクションを、美しいコレクションに。",
+  "options_ui": {
+    "open_in_tab": true,
+    "page": "index.html"
+  },
+  "permissions": ["storage", "tabs", "activeTab", "userScripts"],
+  "minimum_chrome_version": "138",
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "optional_host_permissions": ["http://*/*", "https://*/*"],
+  "background": {
+    "type": "module",
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Ribbon を開く",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png",
+      "32": "icons/icon32.png"
+    }
+  }
+}
