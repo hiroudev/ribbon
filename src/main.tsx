@@ -1181,6 +1181,9 @@ function domain(url: string) {
   }
 }
 function ItemMark({ item, color }: { item: Item; color: string }) {
+  const [faviconFailed, setFaviconFailed] = useState(false);
+  const showFavicon =
+    item.type === "url" && !item.icon && isExtension && !faviconFailed;
   return (
     <span
       className={`item-mark ${item.type}`}
@@ -1188,6 +1191,12 @@ function ItemMark({ item, color }: { item: Item; color: string }) {
     >
       {item.type === "script" ? (
         <Zap size={21} />
+      ) : showFavicon ? (
+        <img
+          src={`chrome-extension://${chrome.runtime.id}/_favicon/?pageUrl=${encodeURIComponent(item.value)}&size=32`}
+          alt=""
+          onError={() => setFaviconFailed(true)}
+        />
       ) : (
         item.icon || item.name.slice(0, 2).toUpperCase()
       )}
@@ -1713,12 +1722,13 @@ function SettingsPanel({
                   onChange={(e) =>
                     setPage({
                       ...page,
-                      columns: Number(e.target.value) as 2 | 3,
+                      columns: Number(e.target.value) as 2 | 3 | 4,
                     })
                   }
                 >
                   <option value="2">2列・ゆったり</option>
                   <option value="3">3列・一覧しやすく</option>
+                  <option value="4">4列・たくさん表示</option>
                 </select>
               </label>
               <label>

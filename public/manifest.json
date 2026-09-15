@@ -110,7 +110,7 @@
     "open_in_tab": true,
     "page": "index.html"
   },
-  "permissions": ["storage", "tabs", "activeTab", "userScripts"],
+  "permissions": ["storage", "tabs", "activeTab", "userScripts", "favicon"],
   "minimum_chrome_version": "138",
   "manifest_version": 3,
   "version": "1.0.0",

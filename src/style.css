@@ -394,7 +394,7 @@ kbd {
 .board {
   display: grid;
   grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
-  gap: 24px;
+  gap: 14px;
   align-items: start;
 }
 .collection {
@@ -407,14 +407,14 @@ kbd {
   background: color-mix(in srgb, var(--group) 3%, var(--bg));
 }
 .collection-head {
-  padding: 19px 16px 17px;
+  padding: 11px 16px 10px;
   display: flex;
   gap: 10px;
   align-items: center;
 }
 .collection-icon {
-  width: 36px;
-  height: 36px;
+  width: 28px;
+  height: 28px;
   border-radius: 9px;
   background: color-mix(in srgb, var(--group) 12%, var(--surface));
   color: var(--group);
@@ -454,7 +454,7 @@ kbd {
 .collection-items {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
   padding: 0 12px;
 }
 .bookmark-card {
@@ -474,15 +474,15 @@ kbd {
   display: flex;
   align-items: center;
   gap: 11px;
-  padding: 16px 13px 10px;
+  padding: 9px 13px 6px;
   width: 100%;
   text-align: left;
   border: 0;
   background: none;
 }
 .item-mark {
-  width: 34px;
-  height: 34px;
+  width: 24px;
+  height: 24px;
   border-radius: 9px;
   display: flex;
   justify-content: center;
@@ -490,7 +490,7 @@ kbd {
   flex-shrink: 0;
   background: color-mix(in srgb, var(--mark) 9%, var(--surface));
   color: var(--mark);
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: -0.5px;
   border: 1px solid color-mix(in srgb, var(--mark) 13%, transparent);
@@ -498,6 +498,11 @@ kbd {
 .item-mark.script {
   background: color-mix(in srgb, #c59b40 12%, var(--surface));
   color: #ab8330;
+}
+.item-mark img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
 }
 .card-text {
   min-width: 0;
@@ -614,15 +619,15 @@ kbd {
   font-size: 9px;
 }
 .list .card-open {
-  padding: 11px 12px;
+  padding: 6px 12px;
 }
 .list .card-text > span {
   display: none;
 }
 .list .item-mark {
-  width: 27px;
-  height: 27px;
-  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
 }
 .list .card-bottom {
   padding-left: 50px;
@@ -632,8 +637,8 @@ kbd {
   gap: 6px;
 }
 .compact .card-open {
-  padding-top: 10px;
-  padding-bottom: 7px;
+  padding-top: 6px;
+  padding-bottom: 4px;
 }
 .compact .collection-items {
   gap: 6px;

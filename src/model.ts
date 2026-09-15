@@ -38,7 +38,7 @@ export type Data = {
     title: string;
     subtitle: string;
     themeId: string;
-    columns: 2 | 3;
+    columns: 2 | 3 | 4;
     density: "comfortable" | "compact";
     cover: "ribbon" | "plain" | "gradient";
   };
@@ -402,7 +402,7 @@ export function validateData(raw: unknown): Data {
   if (
     !str(s.title, 200) ||
     !str(s.subtitle, 1000) ||
-    ![2, 3].includes(s.columns) ||
+    ![2, 3, 4].includes(s.columns) ||
     !["comfortable", "compact"].includes(s.density) ||
     !["ribbon", "plain", "gradient"].includes(s.cover) ||
     ![...themes, ...d.themes].some((t) => t.id === s.themeId)
