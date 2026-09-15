@@ -532,54 +532,6 @@ function App() {
           </header>
         )}
         <div className="content">
-          {!popup && (
-            <section className={`hero ${d.settings.cover}`}>
-              <div className="hero-copy">
-                <div className="eyebrow">
-                  <span /> YOUR CURATED CORNER OF THE WEB
-                </div>
-                <h1>{d.settings.title}</h1>
-                <p>{d.settings.subtitle}</p>
-                <div className="hero-stats">
-                  <span>
-                    <Bookmark size={14} />
-                    {d.items.length} ブックマーク
-                  </span>
-                  <span>
-                    <Folder size={14} />
-                    {d.groups.length} コレクション
-                  </span>
-                  <span>
-                    <Zap size={14} />
-                    {d.items.filter((i) => i.type === "script").length}{" "}
-                    アクション
-                  </span>
-                </div>
-              </div>
-              <div className="hero-art" aria-hidden="true">
-                <div className="art-orbit" />
-                <div className="art-note note-back">
-                  <Code />
-                  <i />
-                  <i />
-                </div>
-                <div className="art-note note-front">
-                  <Bookmark />
-                  <i />
-                  <i />
-                </div>
-                <span className="art-star">✦</span>
-                <span className="art-dot" />
-              </div>
-              <button
-                className="hero-customize"
-                onClick={() => setModal({ type: "settings", tab: "page" })}
-              >
-                <Pencil size={13} />
-                カバーを編集
-              </button>
-            </section>
-          )}
           <section className="toolbar">
             <div className="searchbox">
               <Search size={18} />
